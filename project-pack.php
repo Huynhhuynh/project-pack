@@ -9,6 +9,9 @@
  * Text Domain: pp
  */
 
+define( 'PROJECT_PACK', TRUE );
+define( 'PROJECT_PACK_VERSION', '1.0.0' );
+
 require __DIR__ . '/vendor/autoload.php';
 
 if(! function_exists('project_pack_plugin_crb_load')) {
