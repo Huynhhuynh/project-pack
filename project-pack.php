@@ -11,19 +11,19 @@
 
 require __DIR__ . '/vendor/autoload.php';
 
-if(! function_exists('special_offer_plugin_crb_load')) {
+if(! function_exists('project_pack_plugin_crb_load')) {
     /**
      * @since 1.0.0
      *  
      */
-    function special_offer_plugin_crb_load() {
+    function project_pack_plugin_crb_load() {
         \Carbon_Fields\Carbon_Fields::boot();
     }
     
-    add_action( 'after_setup_theme', 'special_offer_plugin_crb_load' );
+    add_action( 'after_setup_theme', 'project_pack_plugin_crb_load' );
 }
 
-if(! function_exists('bears_compiler_scss_to_css')) {
+if(! function_exists('project_pack_compiler_scss_to_css')) {
 	/**
 	 * Compiler scss to css func
 	 * @since 1.0.0
